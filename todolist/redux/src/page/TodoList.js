@@ -42,11 +42,11 @@ export default class TodoList extends Component {
                         dataObj: [...this.state.dataObj].concat(res.data)
                     };
                 },
-                () => { message.success('success', 0.4)}
+                () => { message.success('导入成功', 0.4)}
             )
         })
         .catch(err => {
-            message.error('fail!!', 1)
+            message.error('导入失败!!', 1)
         })
     }
 
@@ -72,7 +72,7 @@ export default class TodoList extends Component {
             <div style={{ margin: "10px"}}>
                 <Input
                     value={this.state.inputValue}
-                    placeholder="add todo"
+                    placeholder="请输入新增事项"
                     onChange={this.handleChange}
                     style={{ width:"60%"}}
 
@@ -81,19 +81,19 @@ export default class TodoList extends Component {
                     type="primary"
                     onClick={this.handleAdd}
                 >
-                    Add
+                    新增
                 </Button>
                 <Button
                     type="primary"
                     onClick={this.handleAjax}
                 >
-                    Export
+                    导入
                 </Button>
                 <Button
                     type="primary"
                     onClick={this.handleClean}
                 >
-                    Clean
+                    清除
                 </Button>
                 <List
                     header={<div style={{ textAlign: "center" }}>** TodoList **</div>}
