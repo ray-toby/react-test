@@ -1,0 +1,3 @@
+export const CHANGE_INPUT_INPUTVALUE = 'CHANGE_INPUT_INPUTVALUE';
+export const ADD_TODO_ITEM = 'ADD_TODO_ITEM';
+export const DEL_DATA = 'DEL_DATA';
