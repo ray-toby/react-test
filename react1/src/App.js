@@ -8,7 +8,7 @@ function App() {
   const name = 'tom'
   return (
     <div className="App">
-      {/* Hook */}
+      {/* Hook使用 */}
       <HookTest></HookTest>
     </div>
   );

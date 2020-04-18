@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 // import PropTypes from 'prop-types';
 
 export default function HookTest() {
+    //hook使用
     const [count, setCount] = useState(0);
 
     const [age] = useState(20);
