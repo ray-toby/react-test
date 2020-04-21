@@ -23,7 +23,7 @@ export default function HookTest() {
     useEffect(() => {
         document.title = `你点击了${count}次`;
     });
-    //如果仅执行一次，  传递第二个参数为[]
+    //如果仅执行一次，  传递第二个参数为[] shouldComponenntDidUpdate
     //componentDidMount   如果其他依赖状态变化  其他没有变化  设置第二个参数依赖  [count]
     useEffect(() => {
         //api调用
